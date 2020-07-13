@@ -1,0 +1,12 @@
+#!/bin/bash
+echo -e "\033[1;32mPenginstalan bahan bahan"
+sleep 2
+chmod 777 liminfo
+apt update -y
+apt upgrade -y
+apt install pv -y
+apt install exiftool -y
+sleep 3
+echo -e "penginstalan selesai"
+cp liminfo ../usr/bin/liminfo
+echo -e "\003[0m"
